@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.yggdrasil.calculator.MainActivity"
+    android:background="@color/bgColor">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:fontFamily="sans-serif"
+        android:textSize="24sp"
+        android:typeface="sans"
+        android:id="@+id/textView"
+        android:textColor="@android:color/black"
+        android:text="="
+        android:ellipsize="marquee"
+        android:gravity="bottom|left"
+        android:layout_height="140dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView">
+
+
+    <Button
+        android:text="0"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/button19"
+        android:textSize="14sp"
+        android:layout_width="80dp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:onClick="clickNumber"
+        android:backgroundTint="@color/buttonColor" />
+
+    <Button
+        android:text="."
+        android:layout_height="wrap_content"
+        android:id="@+id/bDot"
+        android:textSize="14sp"
+        android:layout_width="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/button16"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:onClick="clickNumber"
+        android:backgroundTint="@color/buttonColor" />
+
+    <Button
+        android:text="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/button16"
+        android:textSize="14sp"
+        android:layout_width="80dp"
+        android:layout_above="@+id/button19"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:onClick="clickNumber"
+        android:backgroundTint="@color/buttonColor" />
+
+    <Button
+        android:text="3"
+        android:layout_height="wrap_content"
+        android:id="@+id/button21"
+        android:textSize="14sp"
+        android:layout_width="80dp"
+        android:layout_alignBaseline="@+id/button20"
+        android:layout_alignBottom="@+id/button20"
+        android:layout_toEndOf="@+id/bDot"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:onClick="clickNumber"
+        android:backgroundTint="@color/buttonColor" />
+
+    <Button
+        android:text="4"
+        android:layout_height="wrap_content"
+        android:id="@+id/button23"
+        android:textSize="14sp"
+        android:layout_width="80dp"
+        android:layout_above="@+id/button16"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:onClick="clickNumber"
+        android:backgroundTint="@color/buttonColor" />
+
+    <Button
+        android:text="5"
+        android:layout_height="wrap_content"
+        android:id="@+id/button24"
+        android:textSize="14sp"
+        android:layout_width="80dp"
+        android:layout_above="@+id/button20"
+        android:layout_toEndOf="@+id/button16"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:onClick="clickNumber"
+        android:backgroundTint="@color/buttonColor" />
+
+    <Button
+        android:text="6"
+        android:layout_height="wrap_content"
+        android:id="@+id/button25"
+        android:textSize="14sp"
+        android:layout_width="80dp"
+        android:layout_alignBaseline="@+id/button24"
+        android:layout_alignBottom="@+id/button24"
+        android:layout_toEndOf="@+id/button24"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:onClick="clickNumber"
+        android:backgroundTint="@color/buttonColor" />
+
+    <Button
+        android:text="7"
+        android:layout_height="wrap_content"
+        android:id="@+id/button27"
+        android:textSize="14sp"
+        android:layout_width="80dp"
+        android:layout_above="@+id/button23"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:onClick="clickNumber"
+        android:backgroundTint="@color/buttonColor" />
+
+    <Button
+        android:text="9"
+        android:layout_height="wrap_content"
+        android:id="@+id/button29"
+        android:textSize="14sp"
+        android:layout_width="80dp"
+        android:layout_above="@+id/button25"
+        android:layout_toEndOf="@+id/button28"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:onClick="clickNumber"
+        android:backgroundTint="@color/buttonColor" />
+
+    <Button
+        android:text="8"
+        android:layout_height="wrap_content"
+        android:id="@+id/button28"
+        android:textSize="14sp"
+        android:layout_width="80dp"
+        android:layout_alignBaseline="@+id/button27"
+        android:layout_alignBottom="@+id/button27"
+        android:layout_toEndOf="@+id/button27"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:onClick="clickNumber"
+        android:backgroundTint="@color/buttonColor" />
+
+    <Button
+        android:text="+"
+        android:layout_height="wrap_content"
+        android:id="@+id/button18"
+        android:textSize="14sp"
+        android:layout_width="80dp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/colorAccent"
+        android:onClick="clickNumber"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="2"
+        android:layout_height="wrap_content"
+        android:id="@+id/button20"
+        android:textSize="14sp"
+        android:layout_width="80dp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:layout_above="@+id/bDot"
+        android:layout_toEndOf="@+id/button19"
+        android:onClick="clickNumber"
+        android:backgroundTint="@color/buttonColor" />
+
+    <Button
+        android:text="History"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_history"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:layout_above="@+id/button27"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/button29"
+        android:backgroundTint="@color/colorAccent"
+        android:onClick="toHistoryActivity" />
+
+    <Button
+        android:text="-"
+        android:layout_height="wrap_content"
+        android:id="@+id/button22"
+        android:textSize="14sp"
+        android:layout_width="80dp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/colorAccent"
+        android:onClick="clickNumber"
+        android:layout_below="@+id/button30"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:id="@+id/button30"
+        android:textSize="14sp"
+        android:layout_width="80dp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/colorAccent"
+        android:text="*"
+        android:onClick="clickNumber"
+        android:visibility="visible"
+        android:layout_alignBaseline="@+id/button25"
+        android:layout_alignBottom="@+id/button25"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:id="@+id/button26"
+        android:textSize="14sp"
+        android:layout_width="80dp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/colorAccent"
+        android:text="/"
+        android:onClick="clickNumber"
+        android:visibility="visible"
+        android:layout_above="@+id/button30"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="C"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonCE"
+        android:textSize="14sp"
+        android:layout_width="80dp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:onClick="CE"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:layout_above="@+id/button26"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="="
+        android:layout_height="wrap_content"
+        android:id="@+id/button17"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:elevation="0dp"
+        android:backgroundTint="@color/colorAccent"
+        android:onClick="clickEqual"
+        android:layout_width="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/button18" />
+</RelativeLayout>
+
+</RelativeLayout>
