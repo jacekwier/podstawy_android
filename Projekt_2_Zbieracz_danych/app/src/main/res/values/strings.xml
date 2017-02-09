@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Data Collector</string>
+    <string name="button_lang">LANGUAGES</string>
+    <string name="button_addNew">NEW</string>
+    <string name="textView_chooseLang">Choose language:</string>
+    <string name="button_edit">Edit</string>
+    <string name="button_delete">Delete</string>
+    <string name="textView_name">Name:</string>
+    <string name="textView_surname">Surname:</string>
+    <string name="button_next">NEXT</string>
+    <string name="button_cancel">CANCEL</string>
+    <string name="textView_BirthDateCaption">Date of birth:</string>
+    <string name="button_ChangeBirthDate">Change</string>
+    <string name="toast_wrongNameSurname">Wrong name or surname!</string>
+    <string name="toast_SetBirthDate">Set date of birth!</string>
+    <string name="button_back">BACK</string>
+    <string name="toast_takePhoto">First take a photo!</string>
+    <string name="textView_summary">Summary:</string>
+    <string name="button_save">SAVE</string>
+    <string name="button_discard">DISCARD</string>
+</resources>

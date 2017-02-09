@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Zbieracz danych</string>
+    <string name="button_lang">JĘZYKI</string>
+    <string name="button_addNew">DODAJ</string>
+    <string name="textView_chooseLang">Wybierz język:</string>
+    <string name="button_edit">Edytuj</string>
+    <string name="button_delete">Usuń</string>
+    <string name="textView_name">Imię:</string>
+    <string name="textView_surname">Nazwisko:</string>
+    <string name="button_next">DALEJ</string>
+    <string name="button_cancel">ANULUJ</string>
+    <string name="textView_BirthDateCaption">Data urodzenia:</string>
+    <string name="button_ChangeBirthDate">Zmień</string>
+    <string name="toast_wrongNameSurname">Błędne imię lub nazwisko!</string>
+    <string name="toast_SetBirthDate">Ustaw datę urodzenia!</string>
+    <string name="button_back">COFNIJ</string>
+    <string name="toast_takePhoto">Najpierw zrób zdjęcie!</string>
+    <string name="textView_summary">Podsumowanie:</string>
+    <string name="button_save">ZAPISZ</string>
+    <string name="button_discard">PORZUĆ</string>
+</resources>

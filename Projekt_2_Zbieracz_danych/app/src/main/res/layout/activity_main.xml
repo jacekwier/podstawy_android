@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.yggdrasil.peoplephotos.MainActivity"
+    android:backgroundTint="@color/colorBackground"
+    android:background="@color/colorBackground">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorBackground"
+        android:layout_above="@+id/frameUnderButtons"
+        android:scrollbars="vertical">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/buttonAddNew"
+        android:id="@+id/tableLayout"
+        android:isScrollContainer="true">
+
+    </TableLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/buttonAddNew"
+        android:background="@color/colorPrimary"
+        android:id="@+id/frameUnderButtons">
+
+    </FrameLayout>
+
+    <Button
+            android:text="@string/button_addNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonAddNew"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@android:color/black"
+            android:onClick="clickAddNew"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonLanguages"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@android:color/black"
+            android:onClick="chooseLanguage"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:text="@string/button_lang" />
+
+</RelativeLayout>

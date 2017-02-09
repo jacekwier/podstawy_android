@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.yggdrasil.sensors.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/RelativeLayout"
+        android:layout_weight="0.5"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mapFragment"
+            android:name="com.google.android.gms.maps.MapFragment"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/RelativeLayout2"
+        android:layout_below="@+id/RelativeLayout1"
+        android:layout_weight="0.5">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textViewLocation"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:minLines="3"/>
+
+        <Button
+            android:text="Track"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/buttonTrack"
+            android:onClick="onClickTrack" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewLight"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:minLines="2"
+            android:layout_below="@id/textViewLocation"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Orientation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewOrientation"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:minLines="2"
+            android:layout_below="@+id/textViewLight"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Accelerometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewAccelerometer"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:minLines="4"
+            android:layout_below="@+id/textViewOrientation"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="Flashlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonFlashlight"
+            android:onClick="fleshLight"
+            android:layout_below="@+id/buttonTrack"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</LinearLayout>
